@@ -47,6 +47,7 @@
 		16185E921C6592410066FC52 /* DatingRoomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatingRoomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16185E961C6592410066FC52 /* DatingRoomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingRoomUITests.swift; sourceTree = "<group>"; };
 		16185E981C6592410066FC52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16185EA41C6594DF0066FC52 /* DatingRoom-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DatingRoom-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		16185E751C6592410066FC52 /* DatingRoom */ = {
 			isa = PBXGroup;
 			children = (
+				16185EA41C6594DF0066FC52 /* DatingRoom-Bridging-Header.h */,
 				16185E761C6592410066FC52 /* AppDelegate.swift */,
 				16185E781C6592410066FC52 /* ViewController.swift */,
 				16185E7A1C6592410066FC52 /* Main.storyboard */,
@@ -399,10 +401,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DatingRoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DatingRoom.template.DatingRoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DatingRoom-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DatingRoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DatingRoom.template.DatingRoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DatingRoom-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +491,7 @@
 				16185E9D1C6592410066FC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16185E9E1C6592410066FC52 /* Build configuration list for PBXNativeTarget "DatingRoomTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +500,7 @@
 				16185EA01C6592410066FC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16185EA11C6592410066FC52 /* Build configuration list for PBXNativeTarget "DatingRoomUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +509,7 @@
 				16185EA31C6592410066FC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
